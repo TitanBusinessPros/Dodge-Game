@@ -83,7 +83,7 @@
         #score {
             position: absolute;
             top: 20px;
-            left: 20px;
+            right: 20px;
             color: #00ffff;
             font-size: 24px;
             font-weight: bold;
@@ -126,7 +126,7 @@
         
         #instructions {
             position: absolute;
-            bottom: 90px;
+            bottom: 120px;
             left: 50%;
             transform: translateX(-50%);
             color: #00ffff;
@@ -138,7 +138,7 @@
         
         #touchControls {
             position: absolute;
-            bottom: 10px;
+            bottom: 40px;
             left: 0;
             right: 0;
             display: flex;
@@ -193,7 +193,7 @@
             #score {
                 font-size: 18px;
                 top: 15px;
-                left: 15px;
+                right: 15px;
             }
             
             #gameOver {
@@ -202,7 +202,11 @@
             
             #instructions {
                 font-size: 11px;
-                bottom: 80px;
+                bottom: 110px;
+            }
+            
+            #touchControls {
+                bottom: 30px;
             }
         }
         
@@ -218,6 +222,25 @@
                 width: 60px;
                 height: 60px;
                 font-size: 24px;
+            }
+            
+            #instructions {
+                bottom: 100px;
+            }
+            
+            #touchControls {
+                bottom: 20px;
+            }
+        }
+        
+        @media (max-height: 600px) {
+            #instructions {
+                bottom: 90px;
+                font-size: 10px;
+            }
+            
+            #touchControls {
+                bottom: 15px;
             }
         }
     </style>
